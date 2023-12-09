@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhando com tags para forulário</title>
+</head>
+<body>
+    <h1>Trabalhando com tags para formulário</h1>
+    <hr>
+    <p>Elementos para formulário são voltados á interação com o usuário. Entrada de dados, seleção de opções, processamento para manipulação de dados e etc.</p>
+    <br>
+    Formulários no HTML são somente uma INTERFACE.
+    <br>
+    <p>Para que o formulário funcione, é necessário combiná-lo com alguma <b>linguagem de programação.</b></p>
+    <hr>
+    <h2>Exemplos</h2>
+    <!--container para elementos de formulário-->
+    <form action="#" method="post"></form>
+        <p>
+            rótulo para vizualização do usuário
+            <label for="nome">Nome:</label>
+            <input required type="text" id="name">
+        </p>
+        <p>
+            <label for="email">E-mail:</label>
+            <input required type="email" id="email" name="email">
+        </p>
+        <p>
+            <label for="telefone">Telefone</label>
+            <input required type="tel" id="telefone" name="telefone">
+        </p>
+        <p>
+            <label for="dataNasc">Data de nascimento:</label>
+            <input required type="date" id="dataNasc" name="dataNasc">
+        </p>
+        <p>Sexo</p>
+        <p>
+            <input type="radio" id="feminino" name="sexo">
+            <label for="feminino">Feminino</label>
+       
+            <input type="radio" id="masculino" name="sexo">
+            <label for="masculino">Masculino</label>
+        </p>
+        <p>Interesses:</p>
+        <p>
+            <input type="checkbox" id="html5" name="Interesses">
+            <label for="html5">HTML5</label>
+
+            <input type="checkbox" id="css3" name="Interesses">
+            <label for="css3">css3</label>
+
+            <input type="checkbox" id="javascript" name="Interesses">
+            <label for="javascript">javascript</label>
+        </p>
+        <p>
+            <label for="cor">Qual a cor preferida?</label>
+            <input type="color" id="cor" name="cor">
+        </p>    
+        <p>
+            <label for="idade">Qual a sua idade?</label>
+            <input type="number" id="idade" name="idade">
+        </p> 
+        <p>
+            <label for="assunto">assunto:</label>
+            <select name="assunto" id="assunto">
+            <option value="">Elogios</option>
+            <option value="">Reclamações</option>
+            <option value="">Sugestoes</option>
+            </select>
+        </p>
+        <p>
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+        </p>
+        <p>
+            <button>Enviar</button>
+        </p>
+</body>
+
+</html>
